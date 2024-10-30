@@ -27,7 +27,7 @@ async function actualizarSucursal() {
         // Segunda llamada usando el token
         const updateResponse = await fetch('https://mapasgv.com:5050/sucursales/7784', {
             method: 'PUT',
-            mode: 'no-cors',
+            
             credentials: 'include',
             headers: {
                 "Content-Type": "application/json",
