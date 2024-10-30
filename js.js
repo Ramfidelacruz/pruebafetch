@@ -1,7 +1,7 @@
 async function actualizarSucursal() {
     try {
         // Primera llamada para obtener el token
-        const loginResponse = await fetch('https://mapasgv.com/login/', {
+        const loginResponse = await fetch('https://mapasgv.com:5050/login/', {
             method: 'POST',
             credentials: 'include',
             headers: {
@@ -25,7 +25,7 @@ async function actualizarSucursal() {
         console.log("tok*****")
         console.log("token", token)
         // Segunda llamada usando el token
-        const updateResponse = await fetch('https://mapasgv.com/sucursales/7784', {
+        const updateResponse = await fetch('https://mapasgv.com:5050/sucursales/7784', {
             method: 'PUT',
             credentials: 'include',
             headers: {
