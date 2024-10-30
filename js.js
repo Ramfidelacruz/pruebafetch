@@ -22,6 +22,7 @@ async function actualizarSucursal() {
 
         const loginData = await loginResponse.json();
         const token = loginData.access_token; // Asumiendo que el token viene en esta propiedad
+        console.log("tok*****")
         console.log("token", token)
         // Segunda llamada usando el token
         const updateResponse = await fetch('https://mapasgv.com/sucursales/7784', {
