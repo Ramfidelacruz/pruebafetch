@@ -1,7 +1,7 @@
 async function actualizarSucursal() {
     try {
         // Primera llamada para obtener el token
-        const loginResponse = await fetch('https://mapasgv.com:5050/login/', {
+        const loginResponse = await fetch('https://mapasgv.com/login/', {
             method: 'POST',
             credentials: 'include',
             headers: {
