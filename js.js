@@ -6,6 +6,9 @@ async function actualizarSucursal() {
             credentials: 'include',
             headers: {
                 'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'POST, PUT, GET, OPTIONS',
+                'Access-Control-Allow-Headers': 'Content-Type, Authorization'
             },
             body: JSON.stringify({
                 usermail: 'RAMFI202020@example.com',
@@ -26,7 +29,10 @@ async function actualizarSucursal() {
             credentials: 'include',
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": `Bearer ${token}`
+                "Authorization": `Bearer ${token}`,
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'POST, PUT, GET, OPTIONS',
+                'Access-Control-Allow-Headers': 'Content-Type, Authorization'
             },
             body: JSON.stringify({
                 "a_domingo": "",
